@@ -1,0 +1,139 @@
+{
+  "placeholders": {
+    "docs\\index.md": [
+      [
+        "EPMware Logo",
+        222,
+        269
+      ]
+    ],
+    "docs\\configuration\\agent-properties.md": [
+      [
+        "Agent Properties File",
+        410,
+        492
+      ],
+      [
+        "Server Configuration",
+        2672,
+        2743
+      ]
+    ],
+    "docs\\configuration\\rest-token.md": [
+      [
+        "User Management",
+        1460,
+        1530
+      ],
+      [
+        "Generate Token Menu",
+        2067,
+        2145
+      ],
+      [
+        "Token Generated",
+        2382,
+        2459
+      ],
+      [
+        "Revoke Token",
+        5398,
+        5462
+      ]
+    ],
+    "docs\\getting-started\\architecture.md": [
+      [
+        "Agent Architecture Diagram",
+        305,
+        388
+      ],
+      [
+        "Single Agent Configuration",
+        2840,
+        2917
+      ],
+      [
+        "Multiple Agent Configuration",
+        3130,
+        3212
+      ],
+      [
+        "Hybrid Configuration",
+        3361,
+        3433
+      ]
+    ],
+    "docs\\integration\\hfm\\configuration.md": [
+      [
+        "Registry Properties Location",
+        1192,
+        1282
+      ],
+      [
+        "HFM Application Configuration",
+        3094,
+        3186
+      ],
+      [
+        "Test HFM Connection",
+        6646,
+        6725
+      ]
+    ],
+    "docs\\management\\windows\\scheduled-tasks.md": [
+      [
+        "Task Scheduler",
+        836,
+        909
+      ],
+      [
+        "Create Task",
+        1057,
+        1126
+      ],
+      [
+        "General Settings",
+        1617,
+        1694
+      ],
+      [
+        "Trigger Configuration",
+        2059,
+        2141
+      ],
+      [
+        "Action Configuration",
+        2875,
+        2955
+      ],
+      [
+        "Settings Configuration",
+        3980,
+        4064
+      ],
+      [
+        "Enter Credentials",
+        4366,
+        4440
+      ],
+      [
+        "Run Task",
+        4646,
+        4702
+      ],
+      [
+        "Task Running",
+        4920,
+        4991
+      ],
+      [
+        "Agent Logs",
+        5633,
+        5701
+      ]
+    ]
+  },
+  "suggestions": {},
+  "manual_mappings": {},
+  "instructions": "Edit the 'manual_mappings' section to override suggestions. Format: {'file:placeholder': 'image_name'}"
+}

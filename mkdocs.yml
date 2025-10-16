@@ -1,0 +1,151 @@
+# mkdocs.yml - Agent Installation Guide
+site_name: Agent Installation Guide
+site_description: Complete guide for installing and configuring EPMware On-Premise Agent
+site_author: EPMware, Inc.
+site_url: https://agent-guide.epmware.com
+
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+  - navigation.top
+  - navigation.indexes
+  - search.highlight
+  - search.share
+  - search.suggest
+  - content.code.copy
+  - content.tooltips
+  - navigation.footer
+  - toc.follow
+  - toc.integrate
+  
+  logo: assets/images/epmware-logo.png
+  favicon: assets/images/favicon.ico
+
+extra_css:
+  - assets/css/custom.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+plugins:
+  - search:
+      lang: en
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+
+# Navigation structure
+nav:
+  - Home:
+    - index.md
+  
+  - Getting Started:
+    - getting-started/index.md
+    - Introduction: getting-started/introduction.md
+    - System Requirements: getting-started/requirements.md
+    - Architecture Overview: getting-started/architecture.md
+  
+  - Installation:
+    - installation/index.md
+    - Prerequisites:
+      - installation/prerequisites/index.md
+      - Installing Cygwin: installation/prerequisites/cygwin.md
+      - Java Configuration: installation/prerequisites/java.md
+    - Agent Installation:
+      - installation/agent/index.md
+      - Download and Extract: installation/agent/download.md
+      - File Structure: installation/agent/file-structure.md
+  
+  - Configuration:
+    - configuration/index.md
+    - Agent Properties: configuration/agent-properties.md
+    - Service Configuration: configuration/service-config.md
+    - REST API Token: configuration/rest-token.md
+    - Testing Connection: configuration/testing.md
+  
+  - Agent Management:
+    - management/index.md
+    - Windows Services:
+      - management/windows/index.md
+      - Scheduled Tasks: management/windows/scheduled-tasks.md
+      - Start and Stop: management/windows/start-stop.md
+    - Linux Services:
+      - management/linux/index.md
+      - Background Process: management/linux/background-process.md
+      - Start and Stop: management/linux/start-stop.md
+    - Agent Logs: management/logs.md
+    - Monitoring: management/monitoring.md
+  
+  - Application Integration:
+    - integration/index.md
+    - Hyperion HFM:
+      - integration/hfm/index.md
+      - Configuration: integration/hfm/configuration.md
+      - Registry Properties: integration/hfm/registry.md
+    - Hyperion Planning:
+      - integration/planning/index.md
+      - Password Encryption: integration/planning/password-encryption.md
+      - Application Properties: integration/planning/properties.md
+    - Oracle Cloud EPM:
+      - integration/cloud/index.md
+      - PCMCS: integration/cloud/pcmcs.md
+      - EPM Automate: integration/cloud/epm-automate.md
+      - Upgrade Process: integration/cloud/upgrade.md
+  
+  - Troubleshooting:
+    - troubleshooting/index.md
+    - Common Issues: troubleshooting/common-issues.md
+    - Connection Problems: troubleshooting/connection.md
+    - Password Issues: troubleshooting/passwords.md
+    - Service Errors: troubleshooting/service-errors.md
+    - Debug Mode: troubleshooting/debug.md
+  
+  - Appendices:
+    - appendices/index.md
+    - Appendix A - Port Requirements: appendices/ports.md
+    - Appendix B - Security Checklist: appendices/security.md
+    - Appendix C - Agent Commands: appendices/commands.md
+    - Appendix D - Error Codes: appendices/error-codes.md
+
+extra:
+  copyright: |
+    © 2025 EPMware, Inc. All rights reserved. | 
+    <a href="https://www.epmware.com">www.epmware.com</a> | 
+    408-614-0442
