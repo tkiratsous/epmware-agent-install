@@ -73,7 +73,9 @@ plugins:
 
 # Navigation structure
 nav:
-  - Home:
+  - EPMware Documentation Center: https://docs.epmware.com
+  
+  - Agent Installation Home:
     - index.md
   
   - Getting Started:
