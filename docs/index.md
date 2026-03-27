@@ -55,14 +55,11 @@ Before installing the EPMware Agent, ensure you have:
 For additional assistance, please contact:
 
 - **Email**: support@epmware.com
-- **Phone**: 408-614-0442
+- **Phone**: 408-614-0166
 - **Website**: [www.epmware.com](https://www.epmware.com)
 
-## Document Information
 
-- **Version**: 1.7
-- **Updated**: November 2023
-- **Copyright**: © 2023 EPMware, Inc. All rights reserved.
+- **Copyright**: © 2026 EPMware, Inc. All rights reserved.
 
 !!! note "License Agreement"
     This document and the software described herein are proprietary to EPMware, Inc. and are protected by copyright and other intellectual property laws. Use is subject to the license agreement between you and EPMware, Inc.
