@@ -6,6 +6,13 @@ Welcome to the EPMware Agent Installation Guide. This comprehensive documentatio
 
 The EPMware On-Premise Agent enables secure integration between EPMware Cloud applications and your on-premise target applications. It acts as a bridge, allowing EPMware to deploy metadata to your Hyperion Financial Management (HFM), Essbase, Planning, and Oracle Cloud EPM applications without direct network exposure.
 
+## Purpose 
+
+The purpose of this document is to provide instructions on installation of the EPMware
+On-Premise agent. The On-Premise Agent enables integration between EPMware Cloud
+applications and on-premise target applications.
+
+
 ## What's in This Guide
 
 <div class="grid cards" markdown>
@@ -24,6 +31,9 @@ The EPMware On-Premise Agent enables secure integration between EPMware Cloud ap
 
 </div>
 
+
+
+
 ## Key Features
 
 - **Secure Communication** - REST API-based authentication with encrypted tokens
@@ -31,24 +41,6 @@ The EPMware On-Premise Agent enables secure integration between EPMware Cloud ap
 - **Application Support** - Integrates with Hyperion HFM, Planning, Essbase, and Oracle Cloud EPM
 - **Automated Deployment** - Scheduled metadata deployments with configurable polling intervals
 - **Comprehensive Logging** - Detailed logs for monitoring and troubleshooting
-
-## Prerequisites
-
-Before installing the EPMware Agent, ensure you have:
-
-- [ ] Java 1.8 or higher installed
-- [ ] Administrative access to the target server
-- [ ] Network connectivity to EPMware application (port 443 for cloud, configurable for on-premise)
-- [ ] Cygwin installed (for Windows servers)
-- [ ] Valid EPMware user account with REST API token
-
-## Quick Start
-
-1. **[Download](installation/agent/download.md)** the EPMware Agent package
-2. **[Install Prerequisites](installation/prerequisites/index.md)** (Cygwin for Windows, Java)
-3. **[Configure](configuration/agent-properties.md)** the agent properties
-4. **[Test](configuration/testing.md)** the connection to EPMware
-5. **[Schedule](management/windows/scheduled-tasks.md)** the agent as a service
 
 ## Support
 

@@ -78,73 +78,29 @@ nav:
   - Agent Installation Home:
     - index.md
   
-  - Getting Started:
-    - getting-started/index.md
-    - Introduction: getting-started/introduction.md
-    - System Requirements: getting-started/requirements.md
-    - Architecture Overview: getting-started/architecture.md
   
-  - Installation:
-    - installation/index.md
-    - Prerequisites:
-      - installation/prerequisites/index.md
-      - Installing Cygwin: installation/prerequisites/cygwin.md
-      - Java Configuration: installation/prerequisites/java.md
-    - Agent Installation:
-      - installation/agent/index.md
-      - Download and Extract: installation/agent/download.md
-      - File Structure: installation/agent/file-structure.md
+  - Hardware And Software Requirements: getting-started/hardware_software_requirement.md
   
-  - Configuration:
-    - configuration/index.md
-    - Agent Properties: configuration/agent-properties.md
-    - Service Configuration: configuration/service-config.md
-    - REST API Token: configuration/rest-token.md
-    - Testing Connection: configuration/testing.md
+  - On Premise Agent Architecture: getting-started/architecture.md
   
-  - Agent Management:
-    - management/index.md
-    - Windows Services:
-      - management/windows/index.md
-      - Scheduled Tasks: management/windows/scheduled-tasks.md
-      - Start and Stop: management/windows/start-stop.md
-    - Linux Services:
-      - management/linux/index.md
-      - Background Process: management/linux/background-process.md
-      - Start and Stop: management/linux/start-stop.md
-    - Agent Logs: management/logs.md
-    - Monitoring: management/monitoring.md
+  - Prerequisites Software Installation: installation/cygwin.md
+
   
-  - Application Integration:
-    - integration/index.md
-    - Hyperion HFM:
-      - integration/hfm/index.md
-      - Configuration: integration/hfm/configuration.md
-      - Registry Properties: integration/hfm/registry.md
-    - Hyperion Planning:
-      - integration/planning/index.md
-      - Password Encryption: integration/planning/password-encryption.md
-      - Application Properties: integration/planning/properties.md
-    - Oracle Cloud EPM:
-      - integration/cloud/index.md
-      - PCMCS: integration/cloud/pcmcs.md
-      - EPM Automate: integration/cloud/epm-automate.md
-      - Upgrade Process: integration/cloud/upgrade.md
+  - EPMWare On Premise Agent Configuration: configuration/onpremise_agent_config.md
+
+  - How to Start and Stop Agent on Windows Servers: configuration/start_stop_agent.md
   
-  - Troubleshooting:
-    - troubleshooting/index.md
-    - Common Issues: troubleshooting/common-issues.md
-    - Connection Problems: troubleshooting/connection.md
-    - Password Issues: troubleshooting/passwords.md
-    - Service Errors: troubleshooting/service-errors.md
-    - Debug Mode: troubleshooting/debug.md
+  - Application Specific Tasks :  
+    - Hyperian HFM : app_specific_tasks/hfm.md
+    - Hyperian Planning : app_specific_tasks/planning.md
+    - PCMCS : app_specific_tasks/pcmcs.md
+    
+  - On-premise Server Option Requirements: on_premise_server_option/on_premise_server_option_requirement.md
+ 
   
-  - Appendices:
-    - appendices/index.md
-    - Appendix A - Port Requirements: appendices/ports.md
-    - Appendix B - Security Checklist: appendices/security.md
-    - Appendix C - Agent Commands: appendices/commands.md
-    - Appendix D - Error Codes: appendices/error-codes.md
+  - Troubleshooting: troubleshooting/troubleshooting.md
+
+ 
 
 extra:
   copyright: |

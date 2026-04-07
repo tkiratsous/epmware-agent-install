@@ -1,0 +1,185 @@
+/* custom.css - EPMware specific styling */
+
+/* EPMware brand colors and styling */
+:root {
+  --epmware-blue: #1976d2;
+  --epmware-orange: #ff9800;
+  --epmware-light-blue: #e3f2fd;
+  --epmware-dark-blue: #0d47a1;
+}
+
+/* Custom admonition for EPMware notes */
+.md-typeset .admonition.note {
+  border-color: var(--epmware-blue);
+}
+
+.md-typeset .admonition.note > .admonition-title {
+  background-color: var(--epmware-light-blue);
+  border-color: var(--epmware-blue);
+}
+
+/* Custom admonition for cautions */
+.md-typeset .admonition.warning {
+  border-color: var(--epmware-orange);
+}
+
+.md-typeset .admonition.warning > .admonition-title {
+  background-color: #fff3e0;
+  border-color: var(--epmware-orange);
+}
+
+/* Procedure steps styling */
+.md-typeset ol li {
+  margin-bottom: 0.8em;
+}
+
+.md-typeset ol li ol {
+  margin-top: 0.5em;
+}
+
+/* Image captions styling */
+.md-typeset figure figcaption,
+.md-typeset img + em {
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  display: block;
+  text-align: center;
+}
+
+/* Status icons and legends */
+.status-legend {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: var(--md-code-bg-color);
+  border-radius: 0.2rem;
+}
+
+.status-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-block;
+}
+
+/* Field reference tables */
+.field-reference table {
+  margin: 1rem 0;
+}
+
+.field-reference th {
+  background-color: var(--epmware-light-blue);
+  color: var(--epmware-dark-blue);
+  font-weight: 600;
+}
+
+/* Hide navigation scrollbar to prevent flash */
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Opera */
+}
+
+/* Print-friendly styles */
+@media print {
+  .md-header,
+  .md-sidebar,
+  .md-footer {
+    display: none !important;
+  }
+  
+  .md-main__inner {
+    margin: 0 !important;
+  }
+  
+  .md-content {
+    max-width: none !important;
+  }
+  
+  /* Ensure images print well */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+  
+  /* Break pages at major headings */
+  h1 {
+    page-break-before: always;
+  }
+  
+  h1:first-child {
+    page-break-before: avoid;
+  }
+}
+
+/* Mobile optimizations for field reference */
+@media (max-width: 768px) {
+  .field-reference table {
+    font-size: 0.85rem;
+  }
+  
+  .md-typeset table:not([class]) td {
+    padding: 0.5rem 0.3rem;
+  }
+}
+
+/* Copy button styling for code blocks */
+.md-clipboard {
+  color: var(--epmware-blue);
+}
+
+.md-clipboard:hover {
+  color: var(--epmware-orange);
+}
+
+/* Enhanced search highlighting */
+.md-search-result mark {
+  background-color: var(--epmware-orange);
+  color: white;
+}
+
+/* Fix navigation text cutoff */
+/* Allow text to wrap and prevent ellipsis truncation */
+.md-nav__link {
+  white-space: normal !important;
+  line-height: 1.4 !important;
+  height: auto !important;
+  min-height: 2rem !important;
+  padding: 0.3rem 0.6rem !important;
+}
+
+.md-nav__link .md-ellipsis {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  display: block !important;
+}
+
+/* For larger screens, allow more space for navigation text */
+@media (min-width: 76.25em) {
+  .md-sidebar--primary {
+    width: 15rem; /* Increase from default 12.1rem if needed */
+  }
+  
+  .md-nav__link {
+    font-size: 0.7rem; /* Slightly smaller font if space is still tight */
+  }
+}
+
+/* Ensure nested navigation items also wrap properly */
+.md-nav__item--nested .md-nav__link {
+  white-space: normal !important;
+}
+
+/* Prevent cutoff in navigation item labels */
+.md-nav__item label.md-nav__link {
+  white-space: normal !important;
+  overflow: visible !important;
+}
